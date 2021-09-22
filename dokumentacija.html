@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="hr">
+
+<head>
+    <title>Dokumentacija</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="tittle" content="Dokumentacijai">
+    <meta name="description" content="Dokumentacija za projekt">
+    <meta name="keywords" content="Dokumentacija; Sanja; WebDiP">
+    <meta name="author" content="Sanja Šajfar">
+    <meta name="date" content="14. Lipanj 2021.">
+    <link rel="stylesheet" href="css/ssajfar.css" type="text/css" />
+    <link rel="stylesheet" href="css/ssajfar_accesibility.css" type="text/css" id="accessibility-style" />
+    <style>
+        .notbold {
+            font-weight: normal
+        }
+
+        ​tr>*+* {
+            padding-left: 4em;
+        }
+
+        .tablica {
+            width: 1300px;
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="javascript/ssajfar.js"></script>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__inner">
+            <a href="index.php" class="header__logo-container">
+                <img src="multimedija/Logo.jpg" alt="logo" class="header__logo"></a>
+            <nav id="header__nav">
+                <ul>
+                    <li class=header__nav-item> <a href="index.php">POVRATAK NA POČETNU STRANICU</a> </li>
+
+                </ul>
+            </nav>
+
+            <span class="header__social-media-container" id="accessibility">
+
+                <img src="multimedija/accessibility.png" alt="header__social-media-image"
+                    class="header__social-media-image">
+
+            </span>
+
+        </div>
+    </header>
+
+    
+    <section id="section-hero" class="section-hero">
+        <h1 class="header__title">Dokumentacija</h1>
+        <h2>Opis projektnog rješenja</h2>
+        <span>Projekt je izrađen da služi za kreiranje, prijavu i održavanje izložbi za vlakove prilikom čega se može izabrati pobjednik svake izložbe. Postoje 4 uloge, a to su: </span> 
+        <br>
+        <span>
+            <ol>
+                <li>Administrator</li>
+                <li>Moderator</li>
+                <li>Registrirani korisnik</li>
+                <li>Neregistrirani korisnik</li>
+            </ol>
+        </span>
+        <br>
+        <h4>Opis završenosti projekta</h4>
+        <span>Procjena postotka realizacije projekta: 45%</span>
+        <span>Procjena vremena za realizaciju projetka: 55h</span>
+        <br>
+        <h4>Popis uočenih problema u radu</h4>
+        <span>Nisu uočeni problemi u radu za dijelove koji su realizirani.</span>
+        <h2>Era model</h2>
+        <figure>
+            <a href="multimedija/era.png"><img src="multimedija/era.png"
+                max-width="800" height="350" alt="ERA model"></a>    
+            <figcaption>ERA model</figcaption>
+        </figure>
+        <br>
+        <h2>Popis skripti</h2>
+        <div class="dokumentacija">
+            Što se tiče dokumentacija, projekt je raspoređen u više direktorija. Ispod će biti u tabličnom prikazu
+            navedene sve datoteke koje se nalaze u svakom direktoriju. U direktoriju multimedija se naleze slike korištene prilikom izrade projekta.
+        </div> <br>
+        <h3>Dikrektorij css</h3>
+            <table style="text-align: left" class="tablica" id="dokumentacija">
+                <tr>
+                    <th>Naziv datoteke</th>
+                    <th>Opis datoteke</th>
+                </tr>
+                <tr>
+                    <th class="notbold">ssajfar_accesibility.css</th>
+                    <th class="notbold">Nalaze se postavke za crno-bijeli dizajn</th>
+                </tr>
+                <tr>
+                    <th class="notbold">ssajfar.css</th>
+                    <th class="notbold">Nalaze se postavke za dizajn nad svim stranicama i postavke reponzivnosti</th>
+                </tr>
+            </table>
+            <h3>Dikrektorij javascript</h3>
+                <table style="text-align: left" class="tablica" id="dokumentacija">
+                    <tr>
+                        <th>Naziv datoteke</th>
+                        <th>Opis datoteke</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">brojVllakovaPoIzlozbi.js</th>
+                        <th class="notbold">Upisuje u tablicu naziv izložbe i broj vlakova po izložbi koja je aktivna</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">izlozbeModerator.js</th>
+                        <th class="notbold">Dodaje novu izložbu u tablicu gdje moderator može otvoriti i zatvoriti glasovanje</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">konfiguracijaSustava.js</th>
+                        <th class="notbold">Iz forme u obliku objekta dohvaća podatke te ispis podataka o konfiguraciji sustava (virtualno vrijeme, trajanje sesije...)</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">moderatori.js</th>
+                        <th class="notbold">Dohvaća korisnike i postavlja mdoeratora za određenu tematiku</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">mojePrijave.js</th>
+                        <th class="notbold">Rad s više prijava, mogućnost brisanja prijave u formi ili iz tablice i aužuriranje tablice</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">popisPrijavljenihKorisnika.js</th>
+                        <th class="notbold">Dodaje u tablicu popis prijavljenih korisnika</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">potvrdiPrijave.js</th>
+                        <th class="notbold">Klik na gumb za promjenu statusa prihvati/odbij prijavu na izložbu</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">registracija.js</th>
+                        <th class="notbold">Napravljene provjere s korisničke strane prilikom unosa polja za registraciju</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">ssajfar.js</th>
+                        <th class="notbold">Dodan event handler za gumb accessibility za crno-bijli dizajn</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">sveIzlozbe.js</th>
+                        <th class="notbold">Dohvaća sve prijave i u tablicu upisuje sve izložbe i dodaje gumb detaljnije</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">sviVlakovi.js</th>
+                        <th class="notbold">Dohvaća sve vlakove i u tablicu upisuje sve vlakove koji su sudjelovali na toj izložbi + gumb za glasanje</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">upravljanjeKorisnicima.js</th>
+                        <th class="notbold">Za blokiranje i otključavanje korisnika</th>
+                    </tr>
+                </table>
+                <h3>Dikrektorij privatno</h3>
+                <table style="text-align: left" class="tablica" id="dokumentacija">
+                    <tr>
+                        <th>Naziv datoteke</th>
+                        <th>Opis datoteke</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">.htaccess</th>
+                        <th class="notbold">Nalaze se postavke za zaključavanje direktorija</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">.htpasswd</th>
+                        <th class="notbold">Nalazi se korisničko ime i kriptirana lozinka za otključavanje direktorija</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">korisnici.php</th>
+                        <th class="notbold">Ispis korisnika sa njihovim ulogama</th>
+                    </tr>
+                </table>
+                <h3>Dikrektorij skripte</h3>
+                <table style="text-align: left" class="tablica" id="dokumentacija">
+                    <tr>
+                        <th>Naziv datoteke</th>
+                        <th>Opis datoteke</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dodajIzlozbu.php</th>
+                        <th class="notbold">Dodavanje izložbe s tom tematikom
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dodajModeratoraTematici.php</th>
+                        <th class="notbold">Dohvaćanje podataka iz baze i pridruživanje moderatora određenoj tematici
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dohvacanjeEmaila.php</th>
+                        <th class="notbold">Dohvaćanje svih emaila iz baze koji se trenutno koriste</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dohvacanjeKorisnika.php</th>
+                        <th class="notbold">Dohvaćanje svih korisničkih imena</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dohvatiBrojVlakovaPoIzlozbi.php</th>
+                        <th class="notbold">Dohvaćanje broja vlakova po izložbi i id izložba koje su aktivne</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dohvatiIzlozbeId.php</th>
+                        <th class="notbold">Dohvaćanje id i naziv svih izložba</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dohvatiMojeIzlozbe.php</th>
+                        <th class="notbold">Dohvaćanje izlozba za koje je taj moderator zadužen</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dohvatiMojePrijave.php</th>
+                        <th class="notbold">Dohvaćanje svih izložba tog korisnika</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dohvatiPopisPrijavljenihKorisnika.php</th>
+                        <th class="notbold">Dohvaćanje iz baze popisa prijavljenih korisnika</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dohvatiPrijavePremaIzlozbi.php</th>
+                        <th class="notbold">Dohvaćanje prijava prema izložbi</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dohvatiSveIzlozbe.php</th>
+                        <th class="notbold">Dohvaćanje svih izložba</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dohvatiSveVlakove.php</th>
+                        <th class="notbold">Dohvaćanje svih vlakova koji su sudjelovali na toj izložbi</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">dohvatiTematikaIzlozbeModeratori.php</th>
+                        <th class="notbold">Dohvaćanje svih tematika izložbe</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">glasovanje.php</th>
+                        <th class="notbold">Unost u bazu korisnika koji su glasali za kojeg vlaka na kojoj izložbi</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">korisnici.php</th>
+                        <th class="notbold">Dohvaćanje svih korisnika</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">korisniciPremaUlozi.php</th>
+                        <th class="notbold">Dohvaćanje svih korisnika prema ulozi</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">mozeGlasati.php</th>
+                        <th class="notbold">Dohvaćanje iz baze je li korisnik već glasao za tu izložbu</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">novaKonfiguracija.php</th>
+                        <th class="notbold">Promjena konfiguracije i unos u bazu promjene</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">obrisiPrijavu.php</th>
+                        <th class="notbold">Brisanje prijava koje su već napravljene iz baze</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">postaviModeratora.php</th>
+                        <th class="notbold">Postavljanje korisnika da mu uloga bude moderator</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">prijavaNaIzlozbuSkripta.php</th>
+                        <th class="notbold">Dodavanje vlaka na izložbu i provjere s klijente strane</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">promjeniStatusPrijave.php</th>
+                        <th class="notbold">Promjena statusa prijave</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">promjeniStatusKorisnika.php</th>
+                        <th class="notbold">Promjena korisnika jel aktivan ili neaktivan</th>
+                    </tr>
+                    <tr>
+                        <th class="notbold">registracijaSkripta.php</th>
+                        <th class="notbold">Provjera polja u registracijskoj formi s klijentske strane</th>
+                    </tr>
+                </table>
+                <h3>Ostale datoteke</h3>
+            <table style="text-align: left" class="tablica" id="dokumentacija">
+                <tr>
+                    <th>Naziv datoteke</th>
+                    <th>Opis datoteke</th>
+                </tr>
+                <tr>
+                    <th class="notbold">aktivacija.php</th>
+                    <th class="notbold">Provjera je li potvrđen aktivacijski kod nakon registracije</th>
+                </tr>
+                <tr>
+                    <th class="notbold">baza.class.php</th>
+                    <th class="notbold">Klasa za rad s bazom podataka</th>
+                </tr>
+                <tr>
+                    <th class="notbold">autor.html</th>
+                    <th class="notbold">Stranica o autoru</th>
+                </tr>
+                <tr>
+                    <th class="notbold">index.php</th>
+                    <th class="notbold">Početna stranica, naslovnica</th>
+                </tr>
+                <tr>
+                    <th class="notbold">izlozbe.php</th>
+                    <th class="notbold">Stranica s popisom izložbi</th>
+                </tr>
+                <tr>
+                    <th class="notbold">izlozbeModerator.php</th>
+                    <th class="notbold">Stranica s popisom izložbi koje može moderator vidjeti u upravljati</th>
+                </tr>
+                <tr>
+                    <th class="notbold">konfiguracijaSustava.php</th>
+                    <th class="notbold">Stranica za postavljanje konfiguracije sustava i virtualno vrijeme</th>
+                </tr>
+                <tr>
+                    <th class="notbold">korisnikClass.php</th>
+                    <th class="notbold">U sesiju se sprema taj objekt</th>
+                </tr>
+                <tr>
+                    <th class="notbold">moderatori.php</th>
+                    <th class="notbold">Vidi se popis registriranih korisnika/ moderatora i mogućnost dodavanja novog moderatora</th>
+                </tr>
+                <tr>
+                    <th class="notbold">mojePrijave.php</th>
+                    <th class="notbold">Popis mojih prijava na izložbu i dodavanje nove prijave za izložbu</th>
+                </tr>
+                <tr>
+                    <th class="notbold">navigacija.php</th>
+                    <th class="notbold">Prikaz stranica koje svaki korisnik vidi prema ulogi, određivanje uloge svakog korisnika</th>
+                </tr>
+                <tr>
+                    <th class="notbold">odjava.php</th>
+                    <th class="notbold">Odjava sa stranice</th>
+                </tr>
+                <tr>
+                    <th class="notbold">okvir.php</th>
+                    <th class="notbold">Aplikacijski okvir</th>
+                </tr>
+                <tr>
+                    <th class="notbold">popisPrijavljenihKorisnika.php</th>
+                    <th class="notbold">Stranica s popisom prijavljenih korisnika</th>
+                </tr>
+                <tr>
+                    <th class="notbold">potvrdiPrijave.php</th>
+                    <th class="notbold">Stranica s potvrdom prijave za izložbu</th>
+                </tr>
+                <tr>
+                    <th class="notbold">pregledVlakova.php</th>
+                    <th class="notbold">Pregled svih vlakova po izložbi</th>
+                </tr>
+                <tr>
+                    <th class="notbold">prijava.php</th>
+                    <th class="notbold">Prijava u sustav</th>
+                </tr>
+                <tr>
+                    <th class="notbold">provjeraUloge.php</th>
+                    <th class="notbold">Provjera uloge korisnika</th>
+                </tr>
+                <tr>
+                    <th class="notbold">registracija.php</th>
+                    <th class="notbold">Stranica za registraciju</th>
+                </tr>
+                <tr>
+                    <th class="notbold">sesija.class.php</th>
+                    <th class="notbold">Klasa za upravljanje sesijama</th>
+                </tr>
+                <tr>
+                    <th class="notbold">upravljanjeKorisnicima.php</th>
+                    <th class="notbold">Početna stranica, naslovnica</th>
+                </tr>
+                <tr>
+                    <th class="notbold">virstualnoVrijeme.php</th>
+                    <th class="notbold">Postavljanje virtualnog vremena</th>
+                </tr>
+            </table>
+            <h2>Navigacijski dijagrami</h2>
+
+            <figure>
+                <a href="multimedija/ssajfar_administrator.png"><img src="multimedija/ssajfar_administrator.png"
+                        max-width="800" height="350" alt="Navigacijski dijagram"></a>
+                <figcaption>Navigacijski dijagram za administratora</figcaption>
+            </figure>
+            <br>
+            <figure>
+                <a href="multimedija/ssajfar_moderator.png"><img src="multimedija/ssajfar_moderator.png" 
+                    max-width="800" height="350" alt="Navigacijski dijagram"></a>
+                
+                <figcaption>Navigacijski dijagram za moderatora</figcaption>
+            </figure>
+            <br>
+            <figure>
+                <a href="multimedija/ssajfar_reggistriranih.png"><img src="multimedija/ssajfar_reggistriranih.png"
+                    max-width="800" height="350" alt="Navigacijski dijagram"></a>
+                <figcaption>Navigacijski dijagram za registitranog korisnika</figcaption>
+            </figure>
+            <br>
+            <figure>
+                <a href="multimedija/ssajfar_neregistrirani.jpg"><img src="multimedija/ssajfar_neregistrirani.jpg"
+                    max-width="800" height="350" alt="Navigacijski dijagram"></a>    
+                <figcaption>Navigacijski dijagram za neregistriranog korisnika</figcaption>
+            </figure>
+            <br>
+            <h2>Korišteni alati</h2>
+            <ol>
+                <li>Visual Studio Code</li>
+                <li>Notepad++</li>
+                <li>MySQL Workbench</li>
+                <li>DBeaver</li>
+                <li>phpMyAdmin</li>
+                <li>FileZilla</li>
+                <li>Putty</li>
+            </ol>
+            <br>
+            <h2>Korištene vanjske datoteke</h2>
+            <ol>
+                <li>baza.class.php - skripta za rad s bazom podataka, preuzeta sa stranica kolegija</li>
+                <li>korisnikClass.php - skripa koja sadrži klasu korisnik koja se pamti u sesiji, preuzeta sa stranica kolegija</li>
+                <li>sesija.class.php - skripta za rad sa sesijom, preuzeta sa stranica kolegija</li>
+            </ol>
+
+
+
+    </section>
+    <footer class="footer">
+        <div class="footer-description">
+            <br>
+            <p>&copy; 2021. <a href="autor.html">Sanja Šajfar</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
